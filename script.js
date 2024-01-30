@@ -22,7 +22,7 @@ const newItem = function () {
 addItemBtn.addEventListener("click", newItem);
 
 item.addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
+  if (event.key === "Enter" && item.value !== "") {
     newItem();
   }
 });
